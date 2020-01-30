@@ -17,14 +17,18 @@ logo = '\n'.join(logo)
 
 
 print('''
-  Welcome to
+     Welcome to
 
 %s
 
 
-  HEXAGON is an interactive chatbot.
-  This implementation by Tatsuya Abe 2020.
+     HEXAGON is an interactive chatbot.
+     This implementation by Tatsuya Abe 2020.
 
 
 
 ''' % logo)
+
+
+print('   HEXAGON： 話しかけてください。')
+print('   You：     ')
