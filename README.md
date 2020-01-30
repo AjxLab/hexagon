@@ -14,10 +14,10 @@ This project is an interactive chatbot.
 
 
 ## Installation
-'''sh
+```sh
 $ git clone https://github.com/AjxLab/hexagon
 $ cd hexagon
-'''
+```
 
 
 ## Author
