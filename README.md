@@ -6,7 +6,7 @@ HEXAGON
 
 
 ## Description
-This program is a interactive natural-language chatbot.
+This program is a interactive natural-language chatbot. A chatbot is a program that responds to user questions. In this project, we are developing with emphasis on "Humanity".
 
 
 ## Requirements
