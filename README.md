@@ -20,7 +20,10 @@ $ cd hexagon
 ```
 
 
+## Contributing
+Bug reports and pull requests are welcome on GitHub at [https://github.com/AjxLab/hexagon](https://github.com/AjxLab/hexagon).
+
+
 ## Author
 - name: Tatsuya Abe
 - email: abe12@mccc.jp
-- url: [GitHub](https://github.com/AjxLab)
