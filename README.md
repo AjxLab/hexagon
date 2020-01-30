@@ -1,9 +1,9 @@
-hexagon
+HEXAGON
 =======
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+![](./img/hexagon.png)
 
-Interactive Chatbot
 
 ## Description
 This project is an interactive chatbot.
