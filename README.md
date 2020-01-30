@@ -6,7 +6,8 @@ HEXAGON
 
 
 ## Description
-This project is an interactive chatbot.
+This program is a interactive natural-language chatbot.
+
 
 ## Requirements
 - MacOS
