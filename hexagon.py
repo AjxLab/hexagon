@@ -31,4 +31,4 @@ print('''
 
 
 print('   HEXAGON： 話しかけてください。')
-print('   You：     ')
+input('   You：     ' )
