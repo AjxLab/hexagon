@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import os
 import shutil
 
 logo = \
@@ -15,7 +16,7 @@ width = shutil.get_terminal_size()[0]
 logo = [' '*((width-len(line))//2) + line for line in logo.split('\n')]
 logo = '\n'.join(logo)
 
-
+os.system('clear')
 print('''
      Welcome to
 
@@ -30,5 +31,6 @@ print('''
 ''' % logo)
 
 
-print('   HEXAGON： 話しかけてください。')
+msg = '話しかけてください。'
+print('   HEXAGON： %s' % msg)
 input('   You：     ' )
