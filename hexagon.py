@@ -31,14 +31,15 @@ print('''
 
 ''' % logo)
 
+try:
+    msg = '話しかけてください。'
+    while True:
+        print('   HEXAGON： %s' % msg)
+        # HEXAGON終了
+        if msg == 'さようなら。':
+            break
 
-msg = '話しかけてください。'
-while True:
-    print('   HEXAGON： %s' % msg)
-    # HEXAGON終了
-    if msg == 'さようなら。':
-        break
-
-    text = input('   You：     ')
-    msg = engine.make_reply(text)
-
+        text = input('   You：     ')
+        msg = engine.make_reply(text)
+except KeyboardInterrupt:
+    exit(0)
