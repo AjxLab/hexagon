@@ -15,8 +15,13 @@ This program is a interactive natural-language chatbot. A chatbot is a program t
 
 
 ## Usage
+### Start an interactive bot
 ```sh
 $ python hexagon.py
+```
+## Train
+```sh
+$ python train.py
 ```
 
 
