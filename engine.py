@@ -9,9 +9,11 @@ def make_reply(text):
     ## -----*-----  -----*----- ##
     if text[-1] != "。": text += "。"
     words = tokenizer.tokenize(text)
+
+    # 単語毎にループ
     for w in words:
-        face = w.surface
-        ps = w.part_of_speech.split(',')[0]
+        face = w.surface                    # 単語
+        ps = w.part_of_speech.split(',')[0] # 品詞
         print(w.part_of_speech.split(','))
 
 
