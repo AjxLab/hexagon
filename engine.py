@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
 from janome.tokenizer import Tokenizer
+import os, re, json, random
 
 # 形態素解析でトークン化
 tokenizer = Tokenizer()
