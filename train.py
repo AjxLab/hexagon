@@ -28,7 +28,9 @@ for file in tqdm(glob.glob('data/wiki/*')):
     text = open(file, 'r', encoding='utf-8', errors='ignore').read()
     # 不要な部分を削除
     text = re.sub(r'\*\[\[.+\]\]', '', text)
+    text = re.sub(r'\[\[.+\]\]', '', text)
     text = re.sub(r'=+.+=+', '', text)
+    text = re.sub(r'.*\*.*\n', '', text)
 
 # 形態素解析
 t = Tokenizer()
