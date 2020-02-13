@@ -5,7 +5,7 @@ import os, re, json, random
 
 # 形態素解析でトークン化
 tokenizer = Tokenizer()
-dict_file = 'chatbot-data.json'
+dict_file = 'model/dict.json'
 dic = {}
 
 
@@ -82,4 +82,4 @@ def make_reply(text):
     return make_sentence('@')
 
 
-print(make_reply('私の名前は阿部健太朗です。'))
+print(make_reply('サッカー。'))
