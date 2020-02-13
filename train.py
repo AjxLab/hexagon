@@ -5,6 +5,24 @@ from janome.tokenizer import Tokenizer
 from tqdm import tqdm
 
 
+def make_dic(words):
+    ## -----*----- マルコフ連鎖の辞書を作成 -----*----- ##
+    tmp = ["@"]
+    dic = {}
+    for i in words:
+        word = i.surface
+        if word == "" or word == "\r\n" or word == "\n": continue
+        tmp.append(word)
+        if len(tmp) < 3: continue
+        if len(tmp) > 3: tmp = tmp[1:]
+        set_word3(dic, tmp)
+        if word == "。":
+            tmp = ["@"]
+            continue
+
+    return dic
+
+
 print('テキストを読み込み')
 for file in tqdm(glob.glob('data/wiki/*')):
     text = open(file, 'r', encoding='utf-8', errors='ignore').read()
