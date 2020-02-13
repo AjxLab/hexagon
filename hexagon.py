@@ -2,6 +2,7 @@
 
 import os
 import shutil
+import engine
 
 logo = \
 '''
@@ -32,5 +33,7 @@ print('''
 
 
 msg = '話しかけてください。'
-print('   HEXAGON： %s' % msg)
-input('   You：     ' )
+while True:
+    print('   HEXAGON： %s' % msg)
+    text = input('   You：     ')
+    msg = engine.make_reply(text)
