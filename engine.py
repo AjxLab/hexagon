@@ -26,7 +26,7 @@ def register_dic(words):
             continue
 
     # 辞書をファイルへ書き込み
-    json.dump(dic, open(dict_file,'w', encoding='utf-8'))
+    json.dump(dic, open(dict_file, 'w', encoding='utf-8'))
 
 def set_word3(dic, s3):
     # -----*----- 三要素のリストを辞書として登録 -----*----- ##
@@ -79,7 +79,11 @@ def make_reply(text):
             return face + '。'
         if ps == '名詞' or ps == '形容詞':
             if face in dic: return make_sentence(face)
+
     return make_sentence('@')
 
 
-print(make_reply('サッカー。'))
+# 辞書があれば最初に読み込む
+if os.path.exists(dict_file):
+    dic = json.load(open(dict_file, 'r'))
+
