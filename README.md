@@ -19,7 +19,7 @@ This program is a interactive natural-language chatbot. A chatbot is a program t
 ```sh
 $ python hexagon.py
 ```
-## Train
+### Train
 ```sh
 $ python train.py
 ```
