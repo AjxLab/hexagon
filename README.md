@@ -14,6 +14,12 @@ This program is a interactive natural-language chatbot. A chatbot is a program t
 - Python 3.7.5
 
 
+## Usage
+```sh
+$ python hexagon.py
+```
+
+
 ## Installation
 ```sh
 $ git clone https://github.com/AjxLab/hexagon
