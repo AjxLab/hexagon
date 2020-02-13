@@ -35,5 +35,10 @@ print('''
 msg = '話しかけてください。'
 while True:
     print('   HEXAGON： %s' % msg)
+    # HEXAGON終了
+    if msg == 'さようなら。':
+        break
+
     text = input('   You：     ')
     msg = engine.make_reply(text)
+
