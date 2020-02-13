@@ -67,6 +67,7 @@ def word_choice(sel):
 # チャットボットに返答させる --- (*3)
 def make_reply(text):
     ## -----*----- 返答を作成 -----*----- ##
+    if text == '': return ''
     if text[-1] != '。': text += '。'
     words = tokenizer.tokenize(text)
     register_dic(words)
